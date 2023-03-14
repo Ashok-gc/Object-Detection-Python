@@ -24,7 +24,7 @@ Overall, this code demonstrates how to perform real-time object detection using 
 
 # Installing
 1. Clone the repository to your local machine.
-2. Update the path to the video file or camera if necessary in the line `cap = cv2.VideoCapture('road.mp4')`.
+2. Install OpenCV using pip: `pip install opencv-python`.
 3. Download the pre-trained object detection model from the TensorFlow Object Detection API and extract the files to the project directory.
 
 # Running the Code
@@ -38,10 +38,10 @@ This will launch the application and start detecting objects in real-time from y
 # Customizing the Code
 The code can be easily customized to detect different objects or improve the detection performance. Here are some suggestions:
 
-1. Modify the thres variable to change the confidence threshold for detecting objects. Lower values will result in more detections but may also produce more false positives.
-2. Modify the classFile variable to use a different list of class names. You can find other pre-trained models and their corresponding class names here.
-3. Modify the configPath and weightsPath variables to use a different pre-trained object detection model. You can find other pre-trained models here.
-4. Modify the net.setInputSize() method to change the input size of the model. Larger inputs will result in better detection accuracy but may also be slower to process.
+1. Modify the `thres` variable to change the confidence threshold for detecting objects. Lower values will result in more detections but may also produce more false positives.
+2. Modify the `classFile` variable to use a different list of class names. You can find other pre-trained models and their corresponding class names.
+3. Modify the `configPath` and `weightsPath` variables to use a different pre-trained object detection model. You can find other pre-trained models.
+4. Modify the `net.setInputSize()` method to change the input size of the model. Larger inputs will result in better detection accuracy but may also be slower to process.
 
 # License
 This project is licensed under the MIT License - see the LICENSE file for details.
